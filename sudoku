@@ -1,0 +1,4 @@
+#!/bin/sh
+BINDIR=.
+${BINDIR}/sudoku.py "$@" | grep -vE "^Long"
+exit 0
